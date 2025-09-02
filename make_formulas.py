@@ -1,3 +1,4 @@
+# make_formulas.py
 import matplotlib.pyplot as plt
 import os
 
@@ -12,10 +13,16 @@ formulas = {
 }
 
 for name, formula in formulas.items():
-    fig, ax = plt.subplots(figsize=(6, 1))
-    ax.text(0.5, 0.5, formula, fontsize=20, ha="center", va="center")
+    # Daha küçük, zarif görseller
+    fig, ax = plt.subplots(figsize=(4, 0.8))
+    ax.text(0.5, 0.5, formula, fontsize=14, ha="center", va="center")
     ax.axis("off")
-    filepath = os.path.join(FIGURE_DIR, f"{name}_formula.png")
-    plt.savefig(filepath, dpi=150, bbox_inches="tight", transparent=True)
+    
+    # Arka planı şeffaf yap
+    fig.patch.set_alpha(0.0)
+    
+    # v2 uzantısıyla kaydet → GitHub cache sorununu çözer
+    filepath = os.path.join(FIGURE_DIR, f"{name}_formula_v2.png")
+    plt.savefig(filepath, dpi=200, bbox_inches="tight", transparent=True)
     plt.close()
     print(f"[INFO] Kaydedildi: {filepath}")
