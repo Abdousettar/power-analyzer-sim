@@ -1,18 +1,18 @@
 ⚡ Power Analyzer Simulation
-
+```
 A Python project that simulates fundamental concepts of electrical power systems (RMS, active power, power factor, phase shift, THD) in a software environment.
 This repository is designed both for learning purposes and as a stepping stone towards hardware-based power analyzers.
-
+```
 ---
 
 🚀 Features
-
+```
 - Synthetic generation of voltage and current signals (phase shift, harmonics, noise injection)
 - RMS, active power, and power factor calculations
 - Phase shift detection using FFT-based method
 - FFT analysis and Total Harmonic Distortion (THD) measurement
 - Graphical outputs saved automatically (time-domain, frequency-domain, instantaneous power)
-
+```
 ---
 
 ## 📂 Project Structure
@@ -78,10 +78,12 @@ Current THD: 10.35%
 
 
 ## 🎯 Roadmap
+```
 - Implement zero-crossing method for phase detection
 - Add more complex harmonic combinations
 - Integrate real sensor data (hardware support)
 - Build a simple GUI (Tkinter/Dash)
+```
 
 ## 🔢 Mathematical Formulas
 ```
