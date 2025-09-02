@@ -83,18 +83,12 @@ Akım THD: 10.35%
 
 ## 🔢 Matematiksel Formüller
 
-RMS:  
-![RMS](figures/rms_formula_final.png)
-
-Aktif Güç:  
-![P](figures/active_power_formula_final.png)
-
-Reaktif Güç:  
-![Q](figures/reactive_power_formula_final.png)
-
-THD:  
-![THD](figures/thd_formula_final.png)
-
+```text
+RMS:        Vrms = sqrt( (1/T) * ∫ v²(t) dt )
+Aktif Güç:  P = Vrms * Irms * cos(φ)
+Reaktif Güç: Q = Vrms * Irms * sin(φ)
+THD:        THD = sqrt(V₂² + V₃² + …) / V₁
+```
 
 
 ## 📚 Kaynaklar
