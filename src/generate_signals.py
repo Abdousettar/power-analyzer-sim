@@ -56,6 +56,6 @@ def generate_signals(
 if __name__ == "__main__":
     # Hem harmonik hem gürültü eklenmiş test
     t, v, i = generate_signals(add_harmonics=True, add_noise=True, save_csv=True)
-    print("Zaman örnekleri:", t[:5])
-    print("Gerilim örnekleri:", v[:5])
-    print("Akım örnekleri:", i[:5])
+    print("Time Samples:", t[:5])
+    print("Voltage Samples:", v[:5])
+    print("Current Samples:", i[:5])

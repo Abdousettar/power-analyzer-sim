@@ -12,11 +12,11 @@ def plot_signals(t, v, i, save_fig=False):
     save_fig=True olursa figures klasörüne PNG kaydeder.
     """
     plt.figure(figsize=(10, 5))
-    plt.plot(t, v, label="Gerilim (V)")
-    plt.plot(t, i, label="Akım (A)")
-    plt.title("Gerilim ve Akım")
-    plt.xlabel("Zaman (s)")
-    plt.ylabel("Genlik")
+    plt.plot(t, v, label="Voltage (V)")
+    plt.plot(t, i, label="Current (A)")
+    plt.title("Voltage and Current")
+    plt.xlabel("Time (t)")
+    plt.ylabel("Amplitude")
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
@@ -24,7 +24,7 @@ def plot_signals(t, v, i, save_fig=False):
     if save_fig:
         filepath = os.path.join(FIGURE_DIR, "signals.png")
         plt.savefig(filepath, dpi=150)
-        print(f"[INFO] Grafik kaydedildi: {filepath}")
+        print(f"[INFO] Graph saved: {filepath}")
     else:
         plt.show()
 
@@ -35,10 +35,10 @@ def plot_power(t, v, i, save_fig=False):
     """
     p = v * i
     plt.figure(figsize=(10, 5))
-    plt.plot(t, p, label="Anlık Güç (W)", color="red")
-    plt.title("Anlık Güç")
-    plt.xlabel("Zaman (s)")
-    plt.ylabel("Güç (W)")
+    plt.plot(t, p, label="Instantenous Power (W)", color="red")
+    plt.title("Instantenous Power")
+    plt.xlabel("Time (t)")
+    plt.ylabel("Power (W)")
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
@@ -46,6 +46,6 @@ def plot_power(t, v, i, save_fig=False):
     if save_fig:
         filepath = os.path.join(FIGURE_DIR, "power.png")
         plt.savefig(filepath, dpi=150)
-        print(f"[INFO] Grafik kaydedildi: {filepath}")
+        print(f"[INFO] Graph saved: {filepath}")
     else:
         plt.show()

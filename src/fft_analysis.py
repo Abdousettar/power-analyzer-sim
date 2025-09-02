@@ -42,14 +42,14 @@ def compute_thd(signal, fs, f0=50, nharmonics=5):
     THD = np.sqrt(harmonic_powers) / V1 if V1 != 0 else 0
     return THD
 
-def plot_fft(signal, fs, title="FFT Spektrumu", save_fig=False, filename="fft.png"):
+def plot_fft(signal, fs, title="FFT Spectrum", save_fig=False, filename="fft.png"):
     freqs, spectrum = compute_fft(signal, fs)
 
     plt.figure(figsize=(10,5))
     plt.stem(freqs, spectrum, basefmt=" ")
     plt.title(title)
-    plt.xlabel("Frekans (Hz)")
-    plt.ylabel("Genlik")
+    plt.xlabel("Frequency (Hz)")
+    plt.ylabel("Amplitude")
     plt.xlim(0, 500)  # 0-500 Hz aralığını göster
     plt.grid(True)
     plt.tight_layout()
@@ -57,6 +57,6 @@ def plot_fft(signal, fs, title="FFT Spektrumu", save_fig=False, filename="fft.pn
     if save_fig:
         filepath = os.path.join(FIGURE_DIR, filename)
         plt.savefig(filepath, dpi=150)
-        print(f"[INFO] FFT grafiği kaydedildi: {filepath}")
+        print(f"[INFO] FFT graph saved: {filepath}")
     else:
         plt.show()

@@ -25,20 +25,20 @@ def main():
     THD_i = compute_thd(i, fs)
 
     # Sonuçları yazdır
-    print("=== Güç Analizörü Sonuçları ===")
+    print("=== Power Analyzer Results ===")
     print(f"Vrms: {Vrms:.2f} V")
     print(f"Irms: {Irms:.2f} A")
-    print(f"Aktif Güç (P): {P:.2f} W")
-    print(f"Güç Faktörü (PF): {PF:.3f}")
-    print(f"Faz Farkı: {phi_deg:.2f}°")
-    print(f"Gerilim THD: {THD_v*100:.2f}%")
-    print(f"Akım THD: {THD_i*100:.2f}%")
+    print(f"Active Power (P): {P:.2f} W")
+    print(f"Power Factor (PF): {PF:.3f}")
+    print(f"Phase Difference: {phi_deg:.2f}°")
+    print(f"Voltage THD: {THD_v*100:.2f}%")
+    print(f"Current THD: {THD_i*100:.2f}%")
 
     # Grafikler
     plot_signals(t, v, i, save_fig=True)
     plot_power(t, v, i, save_fig=True)
-    plot_fft(v, fs, title="Gerilim FFT", save_fig=True, filename="fft_voltage.png")
-    plot_fft(i, fs, title="Akım FFT", save_fig=True, filename="fft_current.png")
+    plot_fft(v, fs, title="Voltage FFT", save_fig=True, filename="fft_voltage.png")
+    plot_fft(i, fs, title="Current FFT", save_fig=True, filename="fft_current.png")
 
 if __name__ == "__main__":
     main()
