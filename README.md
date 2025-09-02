@@ -81,12 +81,19 @@ Akım THD: 10.35%
  - Gerçek sensör verisi (donanım entegrasyonu)
  - Basit bir GUI (ör. Tkinter/Dash)
 
- ## 🔢 Matematiksel Formüller
+## 🔢 Matematiksel Formüller
 
-- RMS:  \( V_{rms} = \sqrt{\frac{1}{T}\int_0^T v^2(t)\,dt} \)  
-- Aktif Güç:  \( P = V_{rms} \cdot I_{rms} \cdot \cos\varphi \)  
-- Reaktif Güç:  \( Q = V_{rms} \cdot I_{rms} \cdot \sin\varphi \)  
-- THD:  \( THD = \frac{\sqrt{V_2^2 + V_3^2 + \dots}}{V_1} \)
+RMS:  
+![RMS](figures/rms_formula.png)
+
+Aktif Güç:  
+![P](figures/active_power_formula.png)
+
+Reaktif Güç:  
+![Q](figures/reactive_power_formula.png)
+
+THD:  
+![THD](figures/thd_formula.png)
 
 ## 📚 Kaynaklar
 
