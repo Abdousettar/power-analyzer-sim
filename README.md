@@ -1,11 +1,11 @@
-⚡ Power Analyzer Simulation
+# ⚡ Power Analyzer Simulation
 ```
 A Python project that simulates fundamental concepts of electrical power systems (RMS, active power, power factor, phase shift, THD) in a software environment.
 This repository is designed both for learning purposes and as a stepping stone towards hardware-based power analyzers.
 ```
 ---
 
-🚀 Features
+## 🚀 Features
 ```
 - Synthetic generation of voltage and current signals (phase shift, harmonics, noise injection)
 - RMS, active power, and power factor calculations
@@ -36,7 +36,7 @@ power-analyzer-sim/
 
 ---
 
-🖥️ Installation
+## 🖥️ Installation
 
 ```bash
 git clone https://github.com/kullanici/power-analyzer-sim.git
@@ -94,8 +94,7 @@ THD:            THD = sqrt(V₂² + V₃² + …) / V₁
 
 ```
 
-
-📚 References
+## 📚 References
 
 - *Electrical Power Systems Basics* (Thomas Wildi)  
 - [NumPy Documentation](https://numpy.org/doc/stable/)  
