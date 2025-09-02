@@ -82,12 +82,12 @@ Akım THD: 10.35%
  - Basit bir GUI (ör. Tkinter/Dash)
 
 ## 🔢 Matematiksel Formüller
-
+```
 RMS:          Vrms = sqrt( (1/T) * ∫ v²(t) dt )
 Aktif Güç:    P = Vrms * Irms * cos(φ)
 Reaktif Güç:  Q = Vrms * Irms * sin(φ)
 THD:          THD = sqrt(V₂² + V₃² + …) / V₁
-
+```
 
 
 ## 📚 Kaynaklar
