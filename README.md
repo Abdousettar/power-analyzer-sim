@@ -1,42 +1,42 @@
-# ⚡ Power Analyzer Simulation
+⚡ Power Analyzer Simulation
 
-Elektrik-elektronik mühendisliğinde kullanılan temel kavramları (RMS, aktif güç, güç faktörü, faz farkı, THD) yazılım ortamında simüle eden Python projesi.
-
-Bu repo, hem öğrenme amaçlıdır hem de gerçek donanım tabanlı güç analizörlerine geçiş için bir ön çalışmadır.
-
----
-
-## 🚀 Özellikler
-
-- Sentetik gerilim ve akım sinyali üretimi (faz farkı, harmonik, gürültü ekleme)
-- RMS, aktif güç, güç faktörü hesaplamaları
-- Faz farkı tespiti (cross-correlation yöntemi)
-- FFT analizi ve **Total Harmonic Distortion (THD)** ölçümü
-- Grafiksel çıktıların kaydedilmesi (zaman domeni + frekans domeni)
+A Python project that simulates fundamental concepts of electrical power systems (RMS, active power, power factor, phase shift, THD) in a software environment.
+This repository is designed both for learning purposes and as a stepping stone towards hardware-based power analyzers.
 
 ---
 
-## 📂 Proje Yapısı
+🚀 Features
+
+- Synthetic generation of voltage and current signals (phase shift, harmonics, noise injection)
+- RMS, active power, and power factor calculations
+- Phase shift detection using FFT-based method
+- FFT analysis and Total Harmonic Distortion (THD) measurement
+- Graphical outputs saved automatically (time-domain, frequency-domain, instantaneous power)
+
+---
+
+## 📂 Project Structure
 
 ```
 power-analyzer-sim/
-│── data/ # Örnek sinyaller (CSV)
-│── figures/ # Grafik çıktıları
-│── src/ # Modüller
-│ ├── generate_signals.py
-│ ├── calculations.py
-│ ├── fft_analysis.py
-│ ├── visualize.py
-│── tests/ # Basit testler
-│── main.py # Giriş noktası
+│── data/            # Sample signals (CSV)
+│── figures/         # Generated plots
+│── src/             # Source modules
+│   ├── generate_signals.py
+│   ├── calculations.py
+│   ├── fft_analysis.py
+│   ├── visualize.py
+│── tests/           # Unit tests
+│── main.py          # Entry point
 │── requirements.txt
 │── README.md
+│── LICENSE
 ```
 
 
 ---
 
-## 🖥️ Kurulum
+🖥️ Installation
 
 ```bash
 git clone https://github.com/kullanici/power-analyzer-sim.git
@@ -47,50 +47,53 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## 📊 Örnek Çıktı
+## 📊 Example Output
 
 ```
-=== Güç Analizörü Sonuçları ===
+
+=== Power Analyzer Results ===
 Vrms: 229.81 V
 Irms: 7.07 A
-Aktif Güç (P): 1407.29 W
-Güç Faktörü (PF): 0.866
-Faz Farkı: 30.00°
-Gerilim THD: 10.20%
-Akım THD: 10.35%
+Active Power (P): 1407.29 W
+Power Factor (PF): 0.866
+Phase Shift: 30.00°
+Voltage THD: 10.20%
+Current THD: 10.35%
+
 ```
 
-## 📈 Görseller
+## 📈 Figures
 
-- Gerilim ve Akım: 
-![Gerilim ve Akım](figures/signals.png)
+- Voltage & Current:  
+![Voltage & Current](figures/signals.png)
 
-- Anlık Güç:
-![Anlık Güç](figures/power.png)
+- Instantaneous Power:  
+![Instantaneous Power](figures/power.png)
 
-- Gerilim FFT:
-![Gerilim FFT](figures/fft_voltage.png)
+- Voltage FFT:  
+![Voltage FFT](figures/fft_voltage.png)
 
-- Akım FFT:
-![Akım FFT](figures/fft_current.png)
+- Current FFT:  
+![Current FFT](figures/fft_current.png)
 
-## 🎯 Geliştirme Planı
 
- - Zero-crossing ile faz farkı ölçümü ekle
- - Daha karmaşık harmonik kombinasyonları
- - Gerçek sensör verisi (donanım entegrasyonu)
- - Basit bir GUI (ör. Tkinter/Dash)
+## 🎯 Roadmap
+- Implement zero-crossing method for phase detection
+- Add more complex harmonic combinations
+- Integrate real sensor data (hardware support)
+- Build a simple GUI (Tkinter/Dash)
 
-## 🔢 Matematiksel Formüller
+## 🔢 Mathematical Formulas
 ```
-RMS:          Vrms = sqrt( (1/T) * ∫ v²(t) dt )
-Aktif Güç:    P = Vrms * Irms * cos(φ)
-Reaktif Güç:  Q = Vrms * Irms * sin(φ)
-THD:          THD = sqrt(V₂² + V₃² + …) / V₁
+RMS:            Vrms = sqrt( (1/T) * ∫ v²(t) dt )
+Active Power:   P = Vrms * Irms * cos(φ)
+Reactive Power: Q = Vrms * Irms * sin(φ)
+THD:            THD = sqrt(V₂² + V₃² + …) / V₁
+
 ```
 
 
-## 📚 Kaynaklar
+📚 References
 
 - *Electrical Power Systems Basics* (Thomas Wildi)  
 - [NumPy Documentation](https://numpy.org/doc/stable/)  
