@@ -84,16 +84,16 @@ Akım THD: 10.35%
 ## 🔢 Matematiksel Formüller
 
 RMS:  
-![RMS](figures/rms_formula_v2.png?raw=true)
+![RMS](figures/rms_formula_final.png)
 
 Aktif Güç:  
-![P](figures/active_power_formula_v2.png?raw=true)
+![P](figures/active_power_formula_final.png)
 
 Reaktif Güç:  
-![Q](figures/reactive_power_formula_v2.png?raw=true)
+![Q](figures/reactive_power_formula_final.png)
 
 THD:  
-![THD](figures/thd_formula_v2.png?raw=true)
+![THD](figures/thd_formula_final.png)
 
 
 

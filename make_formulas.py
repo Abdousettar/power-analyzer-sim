@@ -13,16 +13,16 @@ formulas = {
 }
 
 for name, formula in formulas.items():
-    # Daha küçük, zarif görseller
+    # Daha küçük, şeffaf ve zarif görseller
     fig, ax = plt.subplots(figsize=(4, 0.8))
     ax.text(0.5, 0.5, formula, fontsize=14, ha="center", va="center")
     ax.axis("off")
     
-    # Arka planı şeffaf yap
+    # Şeffaf arka plan
     fig.patch.set_alpha(0.0)
     
-    # v2 uzantısıyla kaydet → GitHub cache sorununu çözer
-    filepath = os.path.join(FIGURE_DIR, f"{name}_formula_v2.png")
+    # "_final" uzantısıyla kaydet → GitHub cache'i bypass eder
+    filepath = os.path.join(FIGURE_DIR, f"{name}_formula_final.png")
     plt.savefig(filepath, dpi=200, bbox_inches="tight", transparent=True)
     plt.close()
     print(f"[INFO] Kaydedildi: {filepath}")
