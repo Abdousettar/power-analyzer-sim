@@ -86,7 +86,18 @@ Current THD: 10.35%
 ```
 
 ## 🔢 Mathematical Formulas
-![RMS Formula](figures/rms_formula_final.png)
+
+- RMS (Root Mean Square):  
+  `Vrms = sqrt( (1/T) * ∫ v(t)^2 dt )`
+
+- Aktif Güç:  
+  `P = Vrms * Irms * cos(phi)`
+
+- Reaktif Güç:  
+  `Q = Vrms * Irms * sin(phi)`
+
+- Toplam Harmonik Distorsiyon (THD):  
+  `THD = sqrt(V2^2 + V3^2 + ... ) / V1`
 
 ## 📚 References
 
