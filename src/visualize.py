@@ -1,4 +1,3 @@
-# src/visualize.py
 import matplotlib.pyplot as plt
 import numpy as np
 import os
@@ -7,10 +6,7 @@ FIGURE_DIR = os.path.join(os.path.dirname(__file__), "..", "figures")
 os.makedirs(FIGURE_DIR, exist_ok=True)
 
 def plot_signals(t, v, i, save_fig=False):
-    """
-    Gerilim ve akım sinyallerini zaman domeninde çizer.
-    save_fig=True olursa figures klasörüne PNG kaydeder.
-    """
+  
     plt.figure(figsize=(10, 5))
     plt.plot(t, v, label="Voltage (V)")
     plt.plot(t, i, label="Current (A)")
@@ -29,10 +25,7 @@ def plot_signals(t, v, i, save_fig=False):
         plt.show()
 
 def plot_power(t, v, i, save_fig=False):
-    """
-    Anlık gücü hesaplayıp sinyalle birlikte çizer.
-    save_fig=True olursa figures klasörüne PNG kaydeder.
-    """
+  
     p = v * i
     plt.figure(figsize=(10, 5))
     plt.plot(t, p, label="Instantenous Power (W)", color="red")

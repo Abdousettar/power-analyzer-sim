@@ -1,32 +1,15 @@
-# Python cache
 __pycache__/
 *.py[cod]
 *.pyo
-
-# Virtual environment
 .venv/
 env/
 venv/
-
-# IDE / Editor
 .vscode/
 .idea/
-
-# Jupyter checkpoints
 .ipynb_checkpoints/
-
-# OS files
 .DS_Store
 Thumbs.db
-
-# Logs
 *.log
-
-# Build / dist
 build/
 dist/
 *.egg-info/
-
-# Figures ve data tutulacak! 
-# figures/
-# data/
