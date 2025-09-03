@@ -86,13 +86,7 @@ Current THD: 10.35%
 ```
 
 ## 🔢 Mathematical Formulas
-```
-RMS:            Vrms = sqrt( (1/T) * ∫ v²(t) dt )
-Active Power:   P = Vrms * Irms * cos(φ)
-Reactive Power: Q = Vrms * Irms * sin(φ)
-THD:            THD = sqrt(V₂² + V₃² + …) / V₁
-
-```
+![RMS Formula](figures/rms_formula_final.png)
 
 ## 📚 References
 
