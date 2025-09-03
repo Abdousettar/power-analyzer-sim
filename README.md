@@ -1,4 +1,8 @@
 # ⚡ Power Analyzer Simulation
+![Python](https://img.shields.io/badge/Python-3.11-blue.svg)  
+![License](https://img.shields.io/badge/License-MIT-green.svg)  
+![Status](https://img.shields.io/badge/Status-Work_in_Progress-orange.svg)  
+![Domain](https://img.shields.io/badge/Domain-Signal%20Processing-yellow)
 ```
 A Python project that simulates fundamental concepts of electrical power systems (RMS, active power, power factor, phase shift, THD) in a software environment.
 This repository is designed both for learning purposes and as a stepping stone towards hardware-based power analyzers.
